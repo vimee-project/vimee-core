@@ -1,14 +1,14 @@
 *.tar.gz
 
 *.exe
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
-src/bitcoin-tx
-src/bitcoin-wallet
-src/test/test_bitcoin
-src/test/test_bitcoin_fuzzy
-src/qt/test/test_bitcoin-qt
+src/vimee
+src/vimeed
+src/vimee-cli
+src/vimee-tx
+src/vimee-wallet
+src/test/test_vimee
+src/test/test_vimee_fuzzy
+src/qt/test/test_vimee-qt
 
 # autoreconf
 Makefile.in
@@ -31,8 +31,8 @@ config.log
 config.status
 configure
 libtool
-src/config/bitcoin-config.h
-src/config/bitcoin-config.h.in
+src/config/vimee-config.h
+src/config/vimee-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -45,11 +45,11 @@ src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
 
-src/qt/bitcoin-qt.config
-src/qt/bitcoin-qt.creator
-src/qt/bitcoin-qt.creator.user
-src/qt/bitcoin-qt.files
-src/qt/bitcoin-qt.includes
+src/qt/vimee-qt.config
+src/qt/vimee-qt.creator
+src/qt/vimee-qt.creator.user
+src/qt/vimee-qt.files
+src/qt/vimee-qt.includes
 
 .deps
 .dirstamp
@@ -85,13 +85,13 @@ src/qt/bitcoin-qt.includes
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-bitcoin-qt
-Bitcoin-Qt.app
+vimee-qt
+Vimee-Qt.app
 background.tiff*
 
 # Unit-tests
 Makefile.test
-bitcoin-qt_test
+vimee-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -104,7 +104,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_bitcoin.coverage/
+test_vimee.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -119,7 +119,7 @@ test/cache/*
 
 /doc/doxygen/
 
-libbitcoinconsensus.pc
+libvimeeconsensus.pc
 contrib/devtools/split-debug.sh
 
 # Output from running db4 installation
